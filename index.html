@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabalho TAP-RAD</title>
+</head>
+
+<body>
+    <header class="bg-secondary mb-4">
+        <h1>Formulário para compra de <span class="bold">Pacote de
+                Stickers</span></h1>
+    </header>
+    <main>
+        <form>
+            <div class="main">
+                <fieldset>
+                    <legend class="label bold">Quais stickers?</legend>
+                    <div class="form-check">
+                        <input type="checkbox" value="react" id="react" name="react">
+                        <label for="react">React</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" value="vue" id="vue" name="vue">
+                        <label for="vue">Vue</label>
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" value="angular" id="angular" name="angular">
+                        <label for="angular">Angular</label>
+                    </div>
+                </fieldset>
+                <div class="qntd-container">
+                    <label class="label bold" for="">Quantos Stickers de cada?</label>
+                    <div class="align-itens">
+                        <button class="subtrair" type="button" disabled>-</button>
+                        <input class="input-number" type="number" name="qntd-sticker" id="qntd-sticker" value="0" min="0">
+                        <button class="somar" type="button">+</button>
+                    </div>
+                </div>
+    
+                <div class="textarea-container">
+                    <label class="label bold" for="obervacoes">Observações:</label>
+                    <textarea name="obervacoes" id="obervacoes"></textarea>
+                </div>
+            </div>
+            
+            
+            <div class="footer">
+                <p>Formulário enviado com sucesso!</p>
+                <button type="submit" class="bold" disabled>ENVIAR</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="Controller.js"></script>
+    <script>
+        let controller = new Controller();
+    </script>
+</body>
+
+</html>
