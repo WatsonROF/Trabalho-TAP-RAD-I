@@ -34,8 +34,10 @@ class Controller {
     disabledButtonCount() {
         if(this.inputContador.value > 0) {
             document.querySelector(".subtrair").disabled = false;
+            this.inputContador.style = "background: #FFFFFF; border: 1px #2F3676 solid;";
         } else {
             document.querySelector(".subtrair").disabled = true;
+            this.inputContador.style = "background: #F59393; border: 1px  #F33232 solid;";
         }
     }
     disabledButtonSubmit() {

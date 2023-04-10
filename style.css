@@ -166,7 +166,7 @@ button:disabled {
     display: none;
 }
 
-.qntd-container .error-contador {
+.error-contador {
     background: #F59393;
     border: 1px solid #F33232;
     border-radius: 4px;
